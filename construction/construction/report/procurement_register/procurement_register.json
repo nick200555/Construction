@@ -1,0 +1,6 @@
+{
+ "ref_doctype": "Purchase Order",
+ "report_name": "Procurement Register",
+ "report_type": "Script Report",
+ "module": "Construction"
+}

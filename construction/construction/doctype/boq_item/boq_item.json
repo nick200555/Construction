@@ -1,0 +1,12 @@
+{
+  "doctype": "DocType", "name": "BOQ Item", "module": "Construction", "istable": 1, "editable_grid": 1,
+  "fields": [
+    {"fieldname": "item_code", "label": "Item Code", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "description", "label": "Description", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "unit", "label": "Unit", "fieldtype": "Select", "options": "m\nm2\nm3\nNos\nKg\nTonne\nLS\nHrs", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "quantity", "label": "Quantity", "fieldtype": "Float", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "unit_rate", "label": "Unit Rate", "fieldtype": "Currency", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "amount", "label": "Amount", "fieldtype": "Currency", "read_only": 1, "in_list_view": 1},
+    {"fieldname": "trade_category", "label": "Trade", "fieldtype": "Link", "options": "Trade Category"}
+  ]
+}

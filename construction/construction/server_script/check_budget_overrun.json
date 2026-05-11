@@ -1,0 +1,7 @@
+{
+ "name": "Check Budget Overrun",
+ "script_type": "DocType Event",
+ "reference_doctype": "Project",
+ "doctype_event": "Before Save",
+ "script": "if doc.budget_total and doc.actual_cost_to_date:\n    overrun_pct = (doc.actual_cost_to_date - doc.budget_total) / doc.budget_total * 100\n    if overrun_pct > 10:\n        frappe.msgprint(f'Warning: Project cost is {overrun_pct:.1f}% over budget.', alert=True, indicator='red')"
+}

@@ -1,0 +1,7 @@
+{
+  "doctype": "Dashboard Chart", "chart_name": "Project Cost Trend",
+  "chart_type": "Line", "document_type": "Project",
+  "time_interval": "Monthly", "based_on": "start_date",
+  "value_based_on": "actual_cost_to_date",
+  "is_public": 1
+}

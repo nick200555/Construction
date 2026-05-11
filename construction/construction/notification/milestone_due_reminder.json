@@ -1,0 +1,8 @@
+{
+  "doctype": "Notification", "name": "Milestone Due Reminder",
+  "document_type": "Subcontract", "event": "Days Before",
+  "days_in_advance": 7, "channel": "Email",
+  "subject": "Subcontract Milestone Due: {{ doc.name }}",
+  "message": "<p>A subcontract milestone is due within 7 days for <b>{{ doc.contractor }}</b>.</p>",
+  "recipients": [{"receiver_by_role": "Construction Project Manager"}]
+}

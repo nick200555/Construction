@@ -1,0 +1,4 @@
+{
+  "doctype": "Print Format", "name": "Progress Claim", "doc_type": "Progress Claim", "standard": "Yes",
+  "html": "<div class='print-format'><h2>Progress Claim</h2><p>Project: {{ doc.project }}</p></div>"
+}

@@ -1,0 +1,4 @@
+{
+  "doctype": "Print Format", "name": "Project Summary Report", "doc_type": "Project", "standard": "Yes",
+  "html": "<div class='print-format'><h2>Project Summary</h2><p>Project Name: {{ doc.project_name }}</p></div>"
+}

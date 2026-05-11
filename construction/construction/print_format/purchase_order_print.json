@@ -1,0 +1,4 @@
+{
+  "doctype": "Print Format", "name": "Purchase Order Print", "doc_type": "Purchase Order", "standard": "Yes",
+  "html": "<div class='print-format'><h2>Purchase Order</h2><p>Supplier: {{ doc.supplier }}</p></div>"
+}

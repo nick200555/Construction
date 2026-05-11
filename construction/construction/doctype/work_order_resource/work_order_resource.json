@@ -1,0 +1,11 @@
+{
+  "doctype": "DocType", "name": "Work Order Resource", "module": "Construction", "istable": 1, "editable_grid": 1,
+  "fields": [
+    {"fieldname": "resource_type", "label": "Resource Type", "fieldtype": "Select", "options": "Labour\nEquipment\nMaterial", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "description", "label": "Description", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "quantity", "label": "Quantity", "fieldtype": "Float", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "unit", "label": "Unit", "fieldtype": "Data", "in_list_view": 1},
+    {"fieldname": "unit_cost", "label": "Unit Cost", "fieldtype": "Currency"},
+    {"fieldname": "total_cost", "label": "Total Cost", "fieldtype": "Currency", "read_only": 1}
+  ]
+}

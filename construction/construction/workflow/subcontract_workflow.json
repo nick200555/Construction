@@ -1,0 +1,11 @@
+{
+  "doctype": "Workflow", "name": "Subcontract Workflow", "document_type": "Subcontract", "is_active": 1,
+  "workflow_state_field": "status",
+  "states": [
+    {"state": "Draft", "doc_status": "0", "allow_edit": "Construction Project Manager"},
+    {"state": "Active", "doc_status": "1", "allow_edit": "Construction Project Manager"}
+  ],
+  "transitions": [
+    {"state": "Draft", "action": "Activate", "next_state": "Active", "allowed": "Construction Project Manager"}
+  ]
+}

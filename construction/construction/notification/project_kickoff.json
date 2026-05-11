@@ -1,0 +1,9 @@
+{
+  "doctype": "Notification", "name": "Project Kickoff",
+  "document_type": "Project", "event": "Value Change", "value_changed": "status",
+  "channel": "Email",
+  "subject": "Project Kickoff: {{ doc.project_name }}",
+  "message": "<p>Dear Team,</p><p>Project <b>{{ doc.project_name }}</b> has been activated.</p>",
+  "condition": "doc.status == 'Active'",
+  "recipients": [{"receiver_by_role": "Construction Project Manager"}]
+}

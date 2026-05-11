@@ -1,0 +1,8 @@
+{
+  "doctype": "Notification", "name": "Safety Incident Alert",
+  "document_type": "Safety Incident", "event": "New", "channel": "Email",
+  "subject": "URGENT: {{ doc.incident_type }} Reported - {{ doc.project }}",
+  "message": "<p>A safety incident has been reported: {{ doc.incident_type }}</p>",
+  "condition": "doc.incident_type in ['Lost Time Injury', 'Fatality']",
+  "recipients": [{"receiver_by_role": "Safety Officer"}]
+}

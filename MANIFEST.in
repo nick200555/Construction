@@ -1,0 +1,10 @@
+include *.txt
+include *.md
+recursive-include construction *.html
+recursive-include construction *.js
+recursive-include construction *.css
+recursive-include construction *.png
+recursive-include construction *.jpg
+recursive-include construction *.svg
+recursive-include construction *.json
+recursive-include construction *.py

@@ -1,0 +1,12 @@
+{
+  "doctype": "Dashboard",
+  "name": "Construction Dashboard",
+  "dashboard_name": "Construction Dashboard",
+  "is_default": 0,
+  "charts": [
+    {"chart": "Active Projects by Phase"},
+    {"chart": "Monthly Progress"},
+    {"chart": "Project Cost Trend"},
+    {"chart": "Procurement Spend"}
+  ]
+}

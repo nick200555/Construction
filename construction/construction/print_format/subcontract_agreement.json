@@ -1,0 +1,4 @@
+{
+  "doctype": "Print Format", "name": "Subcontract Agreement", "doc_type": "Subcontract", "standard": "Yes",
+  "html": "<div class='print-format'><h2>Subcontract Agreement</h2><p>Contractor: {{ doc.contractor }}</p></div>"
+}

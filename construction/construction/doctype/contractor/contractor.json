@@ -1,0 +1,27 @@
+{
+    "doctype": "DocType",
+    "name": "Contractor",
+    "module": "Construction",
+    "autoname": "format:CONT-{YY}-{####}",
+    "fields": [
+        {"fieldname": "contractor_name", "label": "Contractor Name", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "contractor_type", "label": "Contractor Type", "fieldtype": "Select", "options": "Main Contractor\nSubcontractor\nSpecialist\nLabour Only", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "trade_category", "label": "Trade Category", "fieldtype": "Link", "options": "Trade Category"},
+        {"fieldname": "registration_number", "label": "Registration Number", "fieldtype": "Data"},
+        {"fieldname": "vat_number", "label": "VAT/Tax Number", "fieldtype": "Data"},
+        {"fieldname": "contact_person", "label": "Contact Person", "fieldtype": "Data"},
+        {"fieldname": "phone", "label": "Phone", "fieldtype": "Data", "reqd": 1},
+        {"fieldname": "email", "label": "Email", "fieldtype": "Data"},
+        {"fieldname": "address", "label": "Address", "fieldtype": "Small Text"},
+        {"fieldname": "insurance_policy_no", "label": "Insurance Policy No", "fieldtype": "Data"},
+        {"fieldname": "insurance_expiry", "label": "Insurance Expiry", "fieldtype": "Date"},
+        {"fieldname": "rating", "label": "Performance Rating", "fieldtype": "Select", "options": "Excellent\nGood\nSatisfactory\nPoor", "in_list_view": 1},
+        {"fieldname": "is_approved", "label": "Is Approved", "fieldtype": "Check", "default": 0, "in_list_view": 1},
+        {"fieldname": "is_active", "label": "Is Active", "fieldtype": "Check", "default": 1}
+    ],
+    "permissions": [
+        {"role": "System Manager", "permlevel": 0, "read": 1, "write": 1, "create": 1, "delete": 1},
+        {"role": "Construction Project Manager", "permlevel": 0, "read": 1, "write": 1, "create": 1},
+        {"role": "Construction Procurement Officer", "permlevel": 0, "read": 1, "write": 1, "create": 1}
+    ]
+}

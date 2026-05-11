@@ -1,0 +1,24 @@
+{
+  "doctype": "DocType",
+  "name": "Work Order",
+  "module": "Construction",
+  "autoname": "format:WO-{YY}-{####}",
+  "is_submittable": 1,
+  "track_changes": 1,
+  "fields": [
+    {"fieldname": "work_order_id", "label": "Work Order ID", "fieldtype": "Data", "read_only": 1, "in_list_view": 1},
+    {"fieldname": "project", "label": "Project", "fieldtype": "Link", "options": "Project", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "construction_site", "label": "Construction Site", "fieldtype": "Link", "options": "Construction Site", "fetch_from": "project.construction_site", "read_only": 1},
+    {"fieldname": "trade_category", "label": "Trade Category", "fieldtype": "Link", "options": "Trade Category", "reqd": 1, "in_standard_filter": 1},
+    {"fieldname": "assigned_contractor", "label": "Assigned Contractor", "fieldtype": "Link", "options": "Contractor", "reqd": 1},
+    {"fieldname": "description", "label": "Description", "fieldtype": "Text"},
+    {"fieldname": "start_date", "label": "Start Date", "fieldtype": "Date", "reqd": 1},
+    {"fieldname": "end_date", "label": "End Date", "fieldtype": "Date", "reqd": 1},
+    {"fieldname": "estimated_cost", "label": "Estimated Cost", "fieldtype": "Currency"},
+    {"fieldname": "actual_cost", "label": "Actual Cost", "fieldtype": "Currency", "read_only": 1},
+    {"fieldname": "weightage", "label": "Weightage (%)", "fieldtype": "Float", "default": 1},
+    {"fieldname": "completion_percentage", "label": "Completion %", "fieldtype": "Percent", "default": 0, "in_list_view": 1},
+    {"fieldname": "resources", "label": "Resources", "fieldtype": "Table", "options": "Work Order Resource"},
+    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Draft\nScheduled\nIn Progress\nCompleted\nOn Hold\nCancelled", "default": "Draft", "in_list_view": 1, "in_standard_filter": 1}
+  ]
+}

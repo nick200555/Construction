@@ -1,0 +1,5 @@
+{
+ "name": "Project Client Script",
+ "dt": "Project",
+ "script": "frappe.ui.form.on('Project', {\n    refresh(frm) {\n        if (!frm.is_new()) {\n            frm.add_custom_button(__('Create Work Order'), () => {\n                frappe.new_doc('Work Order', { project: frm.doc.name });\n            }, __('Actions'));\n            frm.add_custom_button(__('Record Site Diary'), () => {\n                frappe.new_doc('Site Diary', { project: frm.doc.name });\n            }, __('Actions'));\n        }\n    },\n    contract_value(frm) {\n        if (!frm.doc.budget_total) {\n            frm.set_value('budget_total', frm.doc.contract_value);\n        }\n    }\n});"
+}

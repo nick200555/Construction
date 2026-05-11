@@ -1,0 +1,9 @@
+{
+  "doctype": "Notification", "name": "Inspection Failed",
+  "document_type": "Quality Inspection", "event": "Value Change", "value_changed": "overall_result",
+  "channel": "Email",
+  "subject": "Inspection Failed: {{ doc.name }}",
+  "message": "<p>Quality Inspection failed for project {{ doc.project }}.</p>",
+  "condition": "doc.overall_result == 'Fail'",
+  "recipients": [{"receiver_by_role": "Construction Project Manager"}]
+}

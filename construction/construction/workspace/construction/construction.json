@@ -1,0 +1,27 @@
+{
+  "doctype": "Workspace",
+  "name": "Construction",
+  "label": "Construction",
+  "title": "Construction",
+  "icon": "building",
+  "module": "Construction",
+  "links": [
+    {"label": "Project Management", "type": "Card Break", "icon": "layers"},
+    {"label": "Projects", "type": "Link", "link_type": "DocType", "link_to": "Project"},
+    {"label": "Work Orders", "type": "Link", "link_type": "DocType", "link_to": "Work Order"},
+    {"label": "Site Diaries", "type": "Link", "link_type": "DocType", "link_to": "Site Diary"},
+    {"label": "Subcontracts", "type": "Link", "link_type": "DocType", "link_to": "Subcontract"},
+    {"label": "Procurement", "type": "Card Break", "icon": "shopping-cart"},
+    {"label": "Material Requests", "type": "Link", "link_type": "DocType", "link_to": "Material Request"},
+    {"label": "Purchase Orders", "type": "Link", "link_type": "DocType", "link_to": "Purchase Order"},
+    {"label": "Quality & Safety", "type": "Card Break", "icon": "shield"},
+    {"label": "Quality Inspections", "type": "Link", "link_type": "DocType", "link_to": "Quality Inspection"},
+    {"label": "Safety Incidents", "type": "Link", "link_type": "DocType", "link_to": "Safety Incident"},
+    {"label": "Billing", "type": "Card Break", "icon": "file-text"},
+    {"label": "Progress Claims", "type": "Link", "link_type": "DocType", "link_to": "Progress Claim"},
+    {"label": "Reports", "type": "Card Break", "icon": "bar-chart-2"},
+    {"label": "Project Cost Analysis", "type": "Link", "link_type": "Report", "link_to": "Project Cost Analysis"},
+    {"label": "Resource Utilization", "type": "Link", "link_type": "Report", "link_to": "Resource Utilization Report"},
+    {"label": "Safety Incident Report", "type": "Link", "link_type": "Report", "link_to": "Safety Incident Report"}
+  ]
+}

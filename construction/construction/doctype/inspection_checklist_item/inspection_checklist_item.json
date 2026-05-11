@@ -1,0 +1,8 @@
+{
+  "doctype": "DocType", "name": "Inspection Checklist Item", "module": "Construction", "istable": 1, "editable_grid": 1,
+  "fields": [
+    {"fieldname": "item", "label": "Check Item", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "result", "label": "Result", "fieldtype": "Select", "options": "Pass\nFail\nN/A", "in_list_view": 1},
+    {"fieldname": "remarks", "label": "Remarks", "fieldtype": "Data", "in_list_view": 1}
+  ]
+}

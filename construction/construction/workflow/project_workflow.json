@@ -1,0 +1,21 @@
+{
+  "doctype": "Workflow",
+  "name": "Project Workflow",
+  "document_type": "Project",
+  "is_active": 1,
+  "workflow_state_field": "status",
+  "states": [
+    {"state": "Draft", "doc_status": "0", "allow_edit": "Construction Project Manager"},
+    {"state": "Active", "doc_status": "1", "allow_edit": "Site Engineer"},
+    {"state": "On Hold", "doc_status": "1", "allow_edit": "Construction Project Manager"},
+    {"state": "Completed", "doc_status": "1", "allow_edit": "Construction Project Manager"},
+    {"state": "Cancelled", "doc_status": "2", "allow_edit": "Construction Project Manager"}
+  ],
+  "transitions": [
+    {"state": "Draft", "action": "Activate", "next_state": "Active", "allowed": "Construction Project Manager"},
+    {"state": "Active", "action": "Hold", "next_state": "On Hold", "allowed": "Construction Project Manager"},
+    {"state": "On Hold", "action": "Resume", "next_state": "Active", "allowed": "Construction Project Manager"},
+    {"state": "Active", "action": "Complete", "next_state": "Completed", "allowed": "Construction Project Manager"},
+    {"state": "Draft", "action": "Cancel", "next_state": "Cancelled", "allowed": "Construction Project Manager"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "doctype": "Notification", "name": "Budget Overrun Alert",
+  "document_type": "Project", "event": "Value Change", "value_changed": "actual_cost_to_date",
+  "channel": "Email",
+  "subject": "Budget Overrun Alert: {{ doc.project_name }}",
+  "message": "<p>Project <b>{{ doc.project_name }}</b> has exceeded its budget.</p>",
+  "condition": "doc.actual_cost_to_date > doc.budget_total",
+  "recipients": [{"receiver_by_role": "Construction Project Manager"}]
+}

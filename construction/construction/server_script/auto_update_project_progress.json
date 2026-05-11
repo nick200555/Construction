@@ -1,0 +1,7 @@
+{
+ "name": "Auto Update Project Progress",
+ "script_type": "DocType Event",
+ "reference_doctype": "Work Order",
+ "doctype_event": "After Save",
+ "script": "project_name = doc.project\nif project_name:\n    project = frappe.get_doc('Project', project_name)\n    project.update_completion()"
+}

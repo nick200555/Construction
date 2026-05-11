@@ -1,0 +1,7 @@
+{
+  "doctype": "Dashboard Chart", "chart_name": "Procurement Spend",
+  "chart_type": "Donut", "document_type": "Purchase Order",
+  "group_by_based_on": "supplier",
+  "aggregate_function_based_on": "total_amount",
+  "is_public": 1
+}
