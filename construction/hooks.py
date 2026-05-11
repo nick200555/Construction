@@ -5,6 +5,10 @@ app_description = "Comprehensive Construction Management System for ERPNext v15+
 app_email = "admin@construction.org"
 app_license = "mit"
 
+# Bundle includes
+app_include_js = "/assets/construction/js/construction.bundle.js"
+app_include_css = "/assets/construction/css/construction.bundle.css"
+
 # DocTypes to be exported as fixtures
 fixtures = [
     {"dt": "Custom Field", "filters": [["name","in",["Construction-Custom Fields"]]]},

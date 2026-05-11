@@ -1,0 +1,7 @@
+{
+  "name": "construction",
+  "version": "1.0.0",
+  "description": "Construction Management System for ERPNext",
+  "repository": "https://github.com/nick200555/Construction",
+  "dependencies": {}
+}
