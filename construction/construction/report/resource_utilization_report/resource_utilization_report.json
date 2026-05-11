@@ -1,4 +1,5 @@
 {
+ "name": "Resource Utilization Report",
  "doctype": "Report",
  "ref_doctype": "Work Order",
  "report_name": "Resource Utilization Report",

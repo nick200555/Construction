@@ -1,4 +1,5 @@
 {
+ "name": "Procurement Register",
  "doctype": "Report",
  "ref_doctype": "Purchase Order",
  "report_name": "Procurement Register",

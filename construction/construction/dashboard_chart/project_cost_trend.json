@@ -1,7 +1,12 @@
 {
-  "doctype": "Dashboard Chart", "chart_name": "Project Cost Trend",
-  "chart_type": "Line", "document_type": "Project",
-  "time_interval": "Monthly", "based_on": "start_date",
-  "value_based_on": "actual_cost_to_date",
+  "name": "Project Cost Trend",
+  "doctype": "Dashboard Chart",
+  "chart_name": "Project Cost Trend",
+  "chart_type": "Line",
+  "document_type": "Project",
+  "value_based_on": "estimated_cost",
+  "timeseries": 1,
+  "timespan": "Last Year",
+  "time_interval": "Monthly",
   "is_public": 1
 }

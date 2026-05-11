@@ -1,7 +1,12 @@
 {
-  "doctype": "Dashboard Chart", "chart_name": "Monthly Progress",
-  "chart_type": "Line", "document_type": "Work Order",
-  "time_interval": "Monthly", "based_on": "end_date",
-  "filters_json": "[[\"Work Order\",\"status\",\"=\",\"Completed\",false]]",
+  "name": "Monthly Progress",
+  "doctype": "Dashboard Chart",
+  "chart_name": "Monthly Progress",
+  "chart_type": "Line",
+  "document_type": "Progress Claim",
+  "group_by_type": "Count",
+  "timeseries": 1,
+  "timespan": "Last Year",
+  "time_interval": "Monthly",
   "is_public": 1
 }
