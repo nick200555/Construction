@@ -1,20 +1,87 @@
 {
-  "doctype": "DocType",
-  "name": "Site Diary",
-  "module": "Construction",
-  "autoname": "format:SD-{project}-{diary_date}",
-  "track_changes": 1,
-  "fields": [
-    {"fieldname": "project", "label": "Project", "fieldtype": "Link", "options": "Project", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "diary_date", "label": "Date", "fieldtype": "Date", "default": "Today", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "site_engineer", "label": "Site Engineer", "fieldtype": "Link", "options": "User", "reqd": 1},
-    {"fieldname": "weather", "label": "Weather", "fieldtype": "Select", "options": "Sunny\nPartly Cloudy\nCloudy\nRainy\nStormy\nHot\nCold"},
-    {"fieldname": "workers_on_site", "label": "Workers on Site", "fieldtype": "Int"},
-    {"fieldname": "work_carried_out", "label": "Work Carried Out", "fieldtype": "Text Editor", "reqd": 1},
-    {"fieldname": "materials_delivered", "label": "Materials Delivered", "fieldtype": "Text"},
-    {"fieldname": "issues_encountered", "label": "Issues Encountered", "fieldtype": "Text"},
-    {"fieldname": "visitors", "label": "Visitors", "fieldtype": "Text"},
-    {"fieldname": "instructions_given", "label": "Instructions Given", "fieldtype": "Text"},
-    {"fieldname": "photos", "label": "Photos", "fieldtype": "Attach"}
-  ]
+    "doctype": "DocType",
+    "name": "Site Diary",
+    "module": "Construction",
+    "autoname": "format:SD-{project}-{diary_date}",
+    "track_changes": 1,
+    "fields": [
+        {
+            "fieldname": "project",
+            "label": "Project",
+            "fieldtype": "Link",
+            "options": "Project",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "diary_date",
+            "label": "Date",
+            "fieldtype": "Date",
+            "default": "Today",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "site_engineer",
+            "label": "Site Engineer",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1
+        },
+        {
+            "fieldname": "weather",
+            "label": "Weather",
+            "fieldtype": "Select",
+            "options": "Sunny\nPartly Cloudy\nCloudy\nRainy\nStormy\nHot\nCold"
+        },
+        {
+            "fieldname": "workers_on_site",
+            "label": "Workers on Site",
+            "fieldtype": "Int"
+        },
+        {
+            "fieldname": "work_carried_out",
+            "label": "Work Carried Out",
+            "fieldtype": "Text Editor",
+            "reqd": 1
+        },
+        {
+            "fieldname": "materials_delivered",
+            "label": "Materials Delivered",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "issues_encountered",
+            "label": "Issues Encountered",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "visitors",
+            "label": "Visitors",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "instructions_given",
+            "label": "Instructions Given",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "photos",
+            "label": "Photos",
+            "fieldtype": "Attach"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "permlevel": 0,
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
 }

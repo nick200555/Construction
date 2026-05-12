@@ -1,10 +1,55 @@
 {
-  "doctype": "DocType", "name": "Subcontract Milestone", "module": "Construction", "istable": 1, "editable_grid": 1,
-  "fields": [
-    {"fieldname": "milestone_name", "label": "Milestone", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "due_date", "label": "Due Date", "fieldtype": "Date", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "payment_percentage", "label": "Payment %", "fieldtype": "Percent", "in_list_view": 1},
-    {"fieldname": "payment_amount", "label": "Payment Amount", "fieldtype": "Currency", "in_list_view": 1},
-    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Pending\nIn Progress\nCompleted\nOverdue", "in_list_view": 1}
-  ]
+    "doctype": "DocType",
+    "name": "Subcontract Milestone",
+    "module": "Construction",
+    "istable": 1,
+    "editable_grid": 1,
+    "fields": [
+        {
+            "fieldname": "milestone_name",
+            "label": "Milestone",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "due_date",
+            "label": "Due Date",
+            "fieldtype": "Date",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "payment_percentage",
+            "label": "Payment %",
+            "fieldtype": "Percent",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "payment_amount",
+            "label": "Payment Amount",
+            "fieldtype": "Currency",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Pending\nIn Progress\nCompleted\nOverdue",
+            "in_list_view": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "permlevel": 0,
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
 }

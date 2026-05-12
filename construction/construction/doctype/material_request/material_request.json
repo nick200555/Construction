@@ -1,13 +1,50 @@
 {
-  "doctype": "DocType",
-  "name": "Material Request",
-  "module": "Construction",
-  "autoname": "format:MR-{YY}-{####}",
-  "is_submittable": 1,
-  "fields": [
-    {"fieldname": "project", "label": "Project", "fieldtype": "Link", "options": "Project", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "request_date", "label": "Request Date", "fieldtype": "Date", "default": "Today", "reqd": 1},
-    {"fieldname": "required_by", "label": "Required By Date", "fieldtype": "Date", "reqd": 1},
-    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Draft\nPending Approval\nApproved\nOrdered\nReceived\nCancelled", "default": "Draft"}
-  ]
+    "doctype": "DocType",
+    "name": "Material Request",
+    "module": "Construction",
+    "autoname": "format:MR-{YY}-{####}",
+    "is_submittable": 1,
+    "fields": [
+        {
+            "fieldname": "project",
+            "label": "Project",
+            "fieldtype": "Link",
+            "options": "Project",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "request_date",
+            "label": "Request Date",
+            "fieldtype": "Date",
+            "default": "Today",
+            "reqd": 1
+        },
+        {
+            "fieldname": "required_by",
+            "label": "Required By Date",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Draft\nPending Approval\nApproved\nOrdered\nReceived\nCancelled",
+            "default": "Draft"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "permlevel": 0,
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
 }

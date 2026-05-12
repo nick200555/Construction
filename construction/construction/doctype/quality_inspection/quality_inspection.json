@@ -1,19 +1,88 @@
 {
-  "doctype": "DocType",
-  "name": "Quality Inspection",
-  "module": "Construction",
-  "autoname": "format:QI-{YY}-{####}",
-  "is_submittable": 1,
-  "fields": [
-    {"fieldname": "inspection_id", "label": "Inspection ID", "fieldtype": "Data", "read_only": 1, "in_list_view": 1},
-    {"fieldname": "project", "label": "Project", "fieldtype": "Link", "options": "Project", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "work_order", "label": "Work Order", "fieldtype": "Link", "options": "Work Order"},
-    {"fieldname": "inspection_date", "label": "Inspection Date", "fieldtype": "Date", "default": "Today", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "inspector", "label": "Inspector", "fieldtype": "Link", "options": "User", "reqd": 1},
-    {"fieldname": "inspection_type", "label": "Inspection Type", "fieldtype": "Select", "options": "Routine\nPre-pour\nStructural\nFinishes\nFinal\nClient Walkthrough"},
-    {"fieldname": "checklist", "label": "Checklist Items", "fieldtype": "Table", "options": "Inspection Checklist Item"},
-    {"fieldname": "overall_result", "label": "Overall Result", "fieldtype": "Select", "options": "Pass\nFail\nConditional Pass", "in_list_view": 1, "in_standard_filter": 1},
-    {"fieldname": "remarks", "label": "Remarks", "fieldtype": "Text"},
-    {"fieldname": "photos", "label": "Photos", "fieldtype": "Attach"}
-  ]
+    "doctype": "DocType",
+    "name": "Quality Inspection",
+    "module": "Construction",
+    "autoname": "format:QI-{YY}-{####}",
+    "is_submittable": 1,
+    "fields": [
+        {
+            "fieldname": "inspection_id",
+            "label": "Inspection ID",
+            "fieldtype": "Data",
+            "read_only": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "project",
+            "label": "Project",
+            "fieldtype": "Link",
+            "options": "Project",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "work_order",
+            "label": "Work Order",
+            "fieldtype": "Link",
+            "options": "Work Order"
+        },
+        {
+            "fieldname": "inspection_date",
+            "label": "Inspection Date",
+            "fieldtype": "Date",
+            "default": "Today",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "inspector",
+            "label": "Inspector",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 1
+        },
+        {
+            "fieldname": "inspection_type",
+            "label": "Inspection Type",
+            "fieldtype": "Select",
+            "options": "Routine\nPre-pour\nStructural\nFinishes\nFinal\nClient Walkthrough"
+        },
+        {
+            "fieldname": "checklist",
+            "label": "Checklist Items",
+            "fieldtype": "Table",
+            "options": "Inspection Checklist Item"
+        },
+        {
+            "fieldname": "overall_result",
+            "label": "Overall Result",
+            "fieldtype": "Select",
+            "options": "Pass\nFail\nConditional Pass",
+            "in_list_view": 1,
+            "in_standard_filter": 1
+        },
+        {
+            "fieldname": "remarks",
+            "label": "Remarks",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "photos",
+            "label": "Photos",
+            "fieldtype": "Attach"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "permlevel": 0,
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
 }

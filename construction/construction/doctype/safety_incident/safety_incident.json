@@ -1,22 +1,102 @@
 {
-  "doctype": "DocType",
-  "name": "Safety Incident",
-  "module": "Construction",
-  "autoname": "format:SI-{YY}-{####}",
-  "is_submittable": 1,
-  "track_changes": 1,
-  "fields": [
-    {"fieldname": "incident_id", "label": "Incident ID", "fieldtype": "Data", "read_only": 1, "in_list_view": 1},
-    {"fieldname": "project", "label": "Project", "fieldtype": "Link", "options": "Project", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "incident_date", "label": "Incident Date", "fieldtype": "Date", "reqd": 1, "in_list_view": 1},
-    {"fieldname": "incident_time", "label": "Incident Time", "fieldtype": "Time"},
-    {"fieldname": "incident_type", "label": "Incident Type", "fieldtype": "Select", "options": "Near Miss\nFirst Aid\nMedical Treatment\nLost Time Injury\nFatality\nProperty Damage", "reqd": 1, "in_list_view": 1, "in_standard_filter": 1},
-    {"fieldname": "severity", "label": "Severity", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nCritical", "in_list_view": 1},
-    {"fieldname": "description", "label": "Description", "fieldtype": "Text Editor", "reqd": 1},
-    {"fieldname": "injured_person", "label": "Injured Person", "fieldtype": "Data"},
-    {"fieldname": "root_cause", "label": "Root Cause", "fieldtype": "Text"},
-    {"fieldname": "corrective_action", "label": "Corrective Action", "fieldtype": "Text"},
-    {"fieldname": "reported_to_authorities", "label": "Reported to Authorities", "fieldtype": "Check", "default": 0},
-    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Open\nUnder Investigation\nClosed", "default": "Open", "in_list_view": 1, "in_standard_filter": 1}
-  ]
+    "doctype": "DocType",
+    "name": "Safety Incident",
+    "module": "Construction",
+    "autoname": "format:SI-{YY}-{####}",
+    "is_submittable": 1,
+    "track_changes": 1,
+    "fields": [
+        {
+            "fieldname": "incident_id",
+            "label": "Incident ID",
+            "fieldtype": "Data",
+            "read_only": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "project",
+            "label": "Project",
+            "fieldtype": "Link",
+            "options": "Project",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "incident_date",
+            "label": "Incident Date",
+            "fieldtype": "Date",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "incident_time",
+            "label": "Incident Time",
+            "fieldtype": "Time"
+        },
+        {
+            "fieldname": "incident_type",
+            "label": "Incident Type",
+            "fieldtype": "Select",
+            "options": "Near Miss\nFirst Aid\nMedical Treatment\nLost Time Injury\nFatality\nProperty Damage",
+            "reqd": 1,
+            "in_list_view": 1,
+            "in_standard_filter": 1
+        },
+        {
+            "fieldname": "severity",
+            "label": "Severity",
+            "fieldtype": "Select",
+            "options": "Low\nMedium\nHigh\nCritical",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "description",
+            "label": "Description",
+            "fieldtype": "Text Editor",
+            "reqd": 1
+        },
+        {
+            "fieldname": "injured_person",
+            "label": "Injured Person",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "root_cause",
+            "label": "Root Cause",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "corrective_action",
+            "label": "Corrective Action",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "reported_to_authorities",
+            "label": "Reported to Authorities",
+            "fieldtype": "Check",
+            "default": 0
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Open\nUnder Investigation\nClosed",
+            "default": "Open",
+            "in_list_view": 1,
+            "in_standard_filter": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "permlevel": 0,
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1
+        }
+    ]
 }
