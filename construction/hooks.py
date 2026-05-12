@@ -24,13 +24,7 @@ fixtures = [
     ]]]},
     {"dt": "Notification", "filters": [["document_type","in",[
         "Project","Safety Incident","Subcontract","Purchase Order"
-    ]]]},
-    {"dt": "Workspace", "filters": [["name","in",["Construction"]]]},
-    {"dt": "Dashboard", "filters": [["name","in",["Construction Dashboard"]]]},
-    {"dt": "Dashboard Chart", "filters": [["chart_name","in",[
-        "Active Projects by Phase","Monthly Progress",
-        "Project Cost Trend","Procurement Spend"
-    ]]]},
+    ]]]}
 ]
 
 # Hook on document events
