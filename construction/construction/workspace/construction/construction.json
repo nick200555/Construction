@@ -4,6 +4,7 @@
   "label": "Construction",
   "title": "Construction",
   "icon": "building",
+  "public": 1,
   "module": "Construction",
   "links": [
     {"label": "Project Management", "type": "Card Break", "icon": "layers"},
