@@ -34,30 +34,7 @@ fixtures = [
 ]
 
 # Hook on document events
-doc_events = {
-    "Project": {
-        "on_submit": "construction.construction.doctype.project.project.on_submit",
-        "validate": "construction.construction.doctype.project.project.validate"
-    },
-    "Work Order": {
-        "validate": "construction.construction.doctype.work_order.work_order.validate",
-        "on_submit": "construction.construction.doctype.work_order.work_order.on_submit"
-    },
-    "Purchase Order": {
-        "validate": "construction.construction.doctype.purchase_order.purchase_order.validate",
-        "on_submit": "construction.construction.doctype.purchase_order.purchase_order.on_submit"
-    },
-    "Subcontract": {
-        "validate": "construction.construction.doctype.subcontract.subcontract.validate",
-        "on_submit": "construction.construction.doctype.subcontract.subcontract.on_submit"
-    },
-    "Safety Incident": {
-        "on_submit": "construction.construction.doctype.safety_incident.safety_incident.on_submit"
-    },
-    "Quality Inspection": {
-        "on_submit": "construction.construction.doctype.quality_inspection.quality_inspection.on_submit"
-    }
-}
+doc_events = {}
 
 # Scheduled Tasks
 scheduler_events = {
