@@ -7,6 +7,14 @@ def execute():
 
     frappe.flags.in_import = True
     
+    # Ensure Module Def exists
+    if not frappe.db.exists("Module Def", "Construction"):
+        frappe.get_doc({
+            "doctype": "Module Def",
+            "module_name": "Construction",
+            "app_name": "construction"
+        }).insert(ignore_permissions=True, ignore_if_duplicate=True)
+    
     # 1. Ensure basic Frappe Master Data
     ensure_basic_frappe_masters()
 
