@@ -37,6 +37,7 @@ def ensure_basic_frappe_masters():
             frappe.get_doc({
                 "doctype": "Customer",
                 "customer_name": cust,
+                "customer_type": "Company",
                 "customer_group": "Commercial" if frappe.db.exists("Customer Group", "Commercial") else "All Customer Groups",
                 "territory": "All Territories"
             }).insert(ignore_permissions=True)
@@ -47,6 +48,7 @@ def ensure_basic_frappe_masters():
             frappe.get_doc({
                 "doctype": "Supplier",
                 "supplier_name": supp,
+                "supplier_type": "Company",
                 "supplier_group": "Local" if frappe.db.exists("Supplier Group", "Local") else "All Supplier Groups"
             }).insert(ignore_permissions=True)
 
