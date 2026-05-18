@@ -3,6 +3,7 @@ def after_install():
     ensure_module_def()
     create_roles()
     create_default_data()
+    ensure_custom_permissions()
 
 def ensure_module_def():
     if not frappe.db.exists("Module Def", "Construction"):
@@ -34,3 +35,21 @@ def create_default_data():
             doc = frappe.new_doc('Construction Phase')
             for k, v in p.items(): setattr(doc, k, v)
             doc.insert()
+
+def ensure_custom_permissions():
+    try:
+        from frappe.permissions import add_permission
+        for dt in ['Project', 'Purchase Order', 'Work Order', 'Safety Incident']:
+            try:
+                add_permission(dt, 'Construction Project Manager', 0)
+                add_permission(dt, 'Site Engineer', 0)
+                
+                # explicitly set report and read properties
+                perms = frappe.get_all('Custom DocPerm', filters={'parent': dt, 'role': ['in', ['Construction Project Manager', 'Site Engineer']]}, fields=['name'])
+                for p in perms:
+                    frappe.db.set_value('Custom DocPerm', p.name, 'report', 1)
+                    frappe.db.set_value('Custom DocPerm', p.name, 'read', 1)
+            except Exception as e:
+                pass
+    except ImportError:
+        pass

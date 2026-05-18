@@ -10,6 +10,7 @@ app_license = "mit"
 
 # DocTypes to be exported as fixtures
 fixtures = [
+    "Custom DocPerm",
     {"dt": "Custom Field", "filters": [["name","in",["Construction-Custom Fields"]]]},
     {"dt": "Role", "filters": [["name","in",[
         "Construction Project Manager",

@@ -5,5 +5,13 @@
  "report_name": "Budget vs Actual Report",
  "report_type": "Script Report",
  "module": "Construction",
- "is_standard": "Yes"
+ "is_standard": "Yes",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Construction Project Manager"
+  }
+ ]
 }
