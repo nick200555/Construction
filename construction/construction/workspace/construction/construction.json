@@ -17,15 +17,15 @@
    "label": "Procurement Spend"
   }
  ],
- "content": "[{\"id\": \"cb-pm\", \"type\": \"card\", \"data\": {\"card_name\": \"Project Management\", \"col\": 12}}, {\"id\": \"cb-proc\", \"type\": \"card\", \"data\": {\"card_name\": \"Procurement\", \"col\": 12}}, {\"id\": \"cb-site\", \"type\": \"card\", \"data\": {\"card_name\": \"Site Operations\", \"col\": 12}}, {\"id\": \"cb-qs\", \"type\": \"card\", \"data\": {\"card_name\": \"Quality & Safety\", \"col\": 12}}, {\"id\": \"cb-bill\", \"type\": \"card\", \"data\": {\"card_name\": \"Billing & Claims\", \"col\": 12}}, {\"id\": \"cb-masters\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 12}}, {\"id\": \"cb-analytics\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports & Analytics\", \"col\": 12}}]",
- "creation": "2024-05-12 11:15:00.000000",
+ "content": "[{\"id\": \"cb-project\", \"type\": \"card\", \"data\": {\"card_name\": \"Project Management\", \"col\": 12}}, {\"id\": \"cb-procurement\", \"type\": \"card\", \"data\": {\"card_name\": \"Procurement\", \"col\": 12}}, {\"id\": \"cb-site\", \"type\": \"card\", \"data\": {\"card_name\": \"Site Operations\", \"col\": 12}}, {\"id\": \"cb-quality\", \"type\": \"card\", \"data\": {\"card_name\": \"Quality & Safety\", \"col\": 12}}, {\"id\": \"cb-billing\", \"type\": \"card\", \"data\": {\"card_name\": \"Billing & Claims\", \"col\": 12}}, {\"id\": \"cb-masters\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 12}}, {\"id\": \"cb-reports\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports & Analytics\", \"col\": 12}}]",
+ "creation": "2024-05-12 12:15:00.000000",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "building",
+ "icon": "project",
  "idx": 0,
  "is_default": 0,
  "is_hidden": 0,
@@ -66,8 +66,32 @@
    "type": "Link"
   },
   {
+   "dependencies": "",
    "hidden": 0,
    "idx": 4,
+   "is_query_report": 0,
+   "label": "Construction Site",
+   "link_count": 0,
+   "link_to": "Construction Site",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 5,
+   "is_query_report": 0,
+   "label": "Construction Phase",
+   "link_count": 0,
+   "link_to": "Construction Phase",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 6,
    "is_query_report": 0,
    "label": "Procurement",
    "link_count": 0,
@@ -78,7 +102,7 @@
   {
    "dependencies": "",
    "hidden": 0,
-   "idx": 5,
+   "idx": 7,
    "is_query_report": 0,
    "label": "Material Request",
    "link_count": 0,
@@ -90,33 +114,11 @@
   {
    "dependencies": "",
    "hidden": 0,
-   "idx": 6,
+   "idx": 8,
    "is_query_report": 0,
    "label": "Purchase Order",
    "link_count": 0,
    "link_to": "Purchase Order",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "idx": 7,
-   "is_query_report": 0,
-   "label": "Site Operations",
-   "link_count": 0,
-   "onboard": 1,
-   "title": "Site Operations",
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "idx": 8,
-   "is_query_report": 0,
-   "label": "Site Diary",
-   "link_count": 0,
-   "link_to": "Site Diary",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -130,17 +132,17 @@
    "link_count": 0,
    "link_to": "Subcontract",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
    "hidden": 0,
    "idx": 10,
    "is_query_report": 0,
-   "label": "Quality & Safety",
+   "label": "Site Operations",
    "link_count": 0,
-   "onboard": 1,
-   "title": "Quality & Safety",
+   "onboard": 0,
+   "title": "Site Operations",
    "type": "Card Break"
   },
   {
@@ -148,50 +150,72 @@
    "hidden": 0,
    "idx": 11,
    "is_query_report": 0,
-   "label": "Quality Inspection",
+   "label": "Site Diary",
    "link_count": 0,
-   "link_to": "Quality Inspection",
+   "link_to": "Site Diary",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 12,
+   "is_query_report": 0,
+   "label": "Quality & Safety",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Quality & Safety",
+   "type": "Card Break"
   },
   {
    "dependencies": "",
    "hidden": 0,
-   "idx": 12,
-   "is_query_report": 0,
-   "label": "Safety Incident",
-   "link_count": 0,
-   "link_to": "Safety Incident",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
    "idx": 13,
    "is_query_report": 0,
-   "label": "Billing & Claims",
+   "label": "Quality Inspection",
    "link_count": 0,
-   "onboard": 1,
-   "title": "Billing & Claims",
-   "type": "Card Break"
+   "link_to": "Quality Inspection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   },
   {
    "dependencies": "",
    "hidden": 0,
    "idx": 14,
    "is_query_report": 0,
-   "label": "Progress Claim",
+   "label": "Safety Incident",
    "link_count": 0,
-   "link_to": "Progress Claim",
+   "link_to": "Safety Incident",
    "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
    "hidden": 0,
    "idx": 15,
+   "is_query_report": 0,
+   "label": "Billing & Claims",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Billing & Claims",
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 16,
+   "is_query_report": 0,
+   "label": "Progress Claim",
+   "link_count": 0,
+   "link_to": "Progress Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 17,
    "is_query_report": 0,
    "label": "Masters",
    "link_count": 0,
@@ -202,35 +226,11 @@
   {
    "dependencies": "",
    "hidden": 0,
-   "idx": 16,
+   "idx": 18,
    "is_query_report": 0,
    "label": "Contractor",
    "link_count": 0,
    "link_to": "Contractor",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "idx": 17,
-   "is_query_report": 0,
-   "label": "Construction Site",
-   "link_count": 0,
-   "link_to": "Construction Site",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "idx": 18,
-   "is_query_report": 0,
-   "label": "Construction Phase",
-   "link_count": 0,
-   "link_to": "Construction Phase",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -330,16 +330,12 @@
    "type": "Link"
   }
  ],
- "modified": "2024-05-12 11:15:00.000000",
+ "modified": "2024-05-12 12:15:00.000000",
  "modified_by": "Administrator",
  "module": "Construction",
  "name": "Construction",
- "number_cards": [],
- "onboarding_list": "",
  "owner": "Administrator",
  "public": 1,
- "quick_lists": [],
- "custom_blocks": [],
  "restrict_to_domain": "",
  "roles": [],
  "sequence_id": 1.0,
@@ -349,35 +345,43 @@
    "format": "{} Active",
    "label": "Projects",
    "link_to": "Project",
-   "stats_filter": "{\"status\": \"Active\"}",
-   "type": "DocType"
-  },
-  {
-   "color": "Orange",
-   "format": "{} Draft",
-   "label": "Work Orders",
-   "link_to": "Work Order",
-   "stats_filter": "{\"status\": \"Draft\"}",
-   "type": "DocType"
-  },
-  {
-   "color": "Red",
-   "format": "{} Open",
-   "label": "Safety Incidents",
-   "link_to": "Safety Incident",
-   "stats_filter": "{\"status\": \"Open\"}",
+   "stats_filter": "{\"status\": [\"!=\", \"Completed\"]}",
    "type": "DocType"
   },
   {
    "color": "Green",
-   "label": "Contractors",
-   "link_to": "Contractor",
+   "format": "{} Open",
+   "label": "Work Orders",
+   "link_to": "Work Order",
+   "stats_filter": "{\"status\": \"Open\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "format": "{} Pending",
+   "label": "Material Requests",
+   "link_to": "Material Request",
+   "stats_filter": "{\"status\": [\"!=\", \"Ordered\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "format": "{} Pending",
+   "label": "Purchase Orders",
+   "link_to": "Purchase Order",
+   "stats_filter": "{\"status\": \"To Receive and Bill\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "label": "Safety Incidents",
+   "link_to": "Safety Incident",
    "type": "DocType"
   },
   {
    "color": "Teal",
-   "label": "Construction Sites",
-   "link_to": "Construction Site",
+   "label": "Progress Claims",
+   "link_to": "Progress Claim",
    "type": "DocType"
   }
  ],

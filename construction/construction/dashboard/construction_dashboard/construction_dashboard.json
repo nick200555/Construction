@@ -3,6 +3,7 @@
   "name": "Construction Dashboard",
   "dashboard_name": "Construction Dashboard",
   "is_default": 0,
+  "module": "Construction",
   "charts": [
     {"chart": "Active Projects by Phase"},
     {"chart": "Monthly Progress"},

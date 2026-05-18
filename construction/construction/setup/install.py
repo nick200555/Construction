@@ -1,7 +1,18 @@
 import frappe
 def after_install():
+    ensure_module_def()
     create_roles()
     create_default_data()
+
+def ensure_module_def():
+    if not frappe.db.exists("Module Def", "Construction"):
+        doc = frappe.get_doc({
+            "doctype": "Module Def",
+            "module_name": "Construction",
+            "app_name": "construction",
+            "custom": 0
+        })
+        doc.insert(ignore_permissions=True, ignore_if_duplicate=True)
 
 def create_roles():
     roles = ["Construction Project Manager", "Site Engineer", "Construction Procurement Officer", "QA/QC Inspector", "Safety Officer"]

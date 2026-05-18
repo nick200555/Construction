@@ -6,5 +6,6 @@
   "document_type": "Project",
   "group_by_based_on": "current_phase",
   "filters_json": "[[\"Project\",\"status\",\"in\",[\"Active\",\"On Hold\"],false]]",
-  "is_public": 1
+  "is_public": 1,
+  "module": "Construction"
 }

@@ -8,5 +8,6 @@
   "timeseries": 1,
   "timespan": "Last Year",
   "time_interval": "Monthly",
-  "is_public": 1
+  "is_public": 1,
+  "module": "Construction"
 }
