@@ -6,8 +6,7 @@ app_email = "admin@construction.org"
 app_license = "mit"
 
 # Bundle includes
-app_include_js = "/assets/construction/js/construction.bundle.js"
-app_include_css = "/assets/construction/css/construction.bundle.css"
+# (Removed to prevent esbuild crashing on empty files)
 
 # DocTypes to be exported as fixtures
 fixtures = [
