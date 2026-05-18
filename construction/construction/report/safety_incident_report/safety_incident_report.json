@@ -4,5 +4,6 @@
  "ref_doctype": "Safety Incident",
  "report_name": "Safety Incident Report",
  "report_type": "Script Report",
- "module": "Construction"
+ "module": "Construction",
+ "is_standard": "Yes"
 }
